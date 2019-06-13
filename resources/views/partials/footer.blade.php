@@ -10,7 +10,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">Acerda de nosotros</a>
+                <a href="/nosotros">Acerda de nosotros</a>
               </h6>
             </div>
             <!-- Grid column -->

@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/*Las vistas de GeneralController se encuentras todas en la carpeta "generales" */
+Route::get('nosotros', 'GeneralController@nosotros');

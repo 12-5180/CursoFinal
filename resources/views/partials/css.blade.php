@@ -17,8 +17,11 @@
     
     footer{
         position:absolute; 
-  bottom:; 
-  left:;
-  width: 100%;
+        bottom:; 
+        left:;
+        width: 100%;
+    }
+    .nosotros{
+        height: 270px;
     }
 </style>

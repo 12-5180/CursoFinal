@@ -74,7 +74,7 @@
 
 
 
-        
+        @yield('contenido')
 
         
 
