@@ -1,22 +1,33 @@
 <nav class="navbar navbar-expand-lg navbar-dark indigo">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Emprendimiento Social</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
           aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Educación </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">enlace 1</a>
+              <a class="nav-link" href="#">Medio Ambiente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">enlace 2</a>
+              <a class="nav-link" href="#">Salud</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comunitario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Innovación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Divulgación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Arte</a>
+            </li>
+            
           </ul>
 
           <ul class="nav justify-content-end ">
