@@ -16,6 +16,10 @@ class ProyectosController extends Controller
 
     public function Show($id){
         $data = Propuesta::findOrFail($id);
+
+       if($data->estadoProyecto != 3){
+           return view('welcome');
+       }
        
         return view('proyectos.show', compact('data'));
         
