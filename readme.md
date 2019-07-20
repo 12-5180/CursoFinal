@@ -9,6 +9,7 @@
 <li>Abrir la consola en la ubicación del proyecto</li>
 <li>Buscar el archivo .env.example y borrar el example</li>
 <li>Colocar la información de la base de datos en la cual correrá la aplicación</li>
+<li>Escribir: "composer install"</li>
 <li>Escribir: "php artisan key:generate"</li>
 <li>Escribir: "php artisan migrate --seed"</li>
 <li>Escribir: "php artisan serve"</li>
