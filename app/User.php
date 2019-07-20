@@ -68,4 +68,11 @@ class User extends Authenticatable
         }
         return false;
     }
+
+    //propuestas
+
+    public function propuesta()
+    {
+        return $this->hasOne('App\Propuesta');
+    }
 }

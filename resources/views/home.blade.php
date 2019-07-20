@@ -14,8 +14,17 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    
+
+                    @if (Auth::user()->hasRole("user"))
+                        @include('user.panelUser')
+                    @endif
+                    @if (Auth::user()->hasRole("employee"))
+                        @include('employee.panelEmployee')
+                    @endif
                 </div>
+
+                @yield('content')
             </div>
         </div>
     </div>

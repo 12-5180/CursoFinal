@@ -1,5 +1,7 @@
 <!-- Footer -->
-<footer class="page-footer font-small indigo  ">
+</div>
+<div id="footer" class="footer">
+    <footer class="page-footer font-small indigo  ">
 
         <!-- Footer Links -->
         <div class="container">
@@ -18,7 +20,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">Testimonios</a>
+                <a href="/terminos-y-condiciones">Términos y condiciones</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -26,7 +28,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">Empleos</a>
+                <a href="/staff">Staff</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -34,7 +36,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">Ayuda</a>
+                <a href="/ayuda">Ayuda</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -42,7 +44,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">Contacto</a>
+                <a href="/contacto">Contacto</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -108,15 +110,18 @@
       
           </div>
           <!-- Grid row-->
-      
+          <div class=" footer-copyright text-center py-3">© 2019 Copyright:
+              <a href="#"> Jayson Santana</a>
+            </div>
         </div>
         <!-- Footer Links -->
       
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-          <a href="#"> Jayson Santana</a>
-        </div>
+        
         <!-- Copyright -->
       
       </footer>
       <!-- Footer -->
+
+</div>
+    

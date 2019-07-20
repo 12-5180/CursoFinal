@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark indigo">
-        <a class="navbar-brand" href="#">Emprendimiento Social</a>
+<nav class="navbar navbar-expand-lg navbar-dark indigo" >
+        <a class="navbar-brand" href="/">Emprendimiento Social</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
           aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -7,25 +7,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Educación </a>
+              <a class="nav-link " href="{{route('educación')}}">Educación </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Medio Ambiente</a>
+              <a class="nav-link" href="/medioAmbiente">Medio Ambiente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Salud</a>
+              <a class="nav-link" href="/salud">Salud</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Comunitario</a>
+                <a class="nav-link" href="/comunitario">Comunitario</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Innovación</a>
+                <a class="nav-link" href="/innovación">Innovación</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Divulgación</a>
+                <a class="nav-link" href="/divulgación">Divulgación</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Arte</a>
+                <a class="nav-link" href="arte">Arte</a>
             </li>
             
           </ul>
@@ -48,7 +48,7 @@
                   @endif
               </ul>
 
-            </nav>
+</nav>
           
 
       <!--
