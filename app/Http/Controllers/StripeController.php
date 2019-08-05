@@ -21,14 +21,14 @@ class StripeController extends Controller
         
 
         
-        /*
+       
         Charge::create ([
                 "amount" => $request->cantidad,
                 "currency" => "DOP",
                 "source" => $request->stripeToken,
                 "description" => "Donación para el proyecto: ". $data->nombreProyecto 
         ]);
-        */
+        
         
         Pago::create([
             'transaccion' => date("YmdHis").rand(),
