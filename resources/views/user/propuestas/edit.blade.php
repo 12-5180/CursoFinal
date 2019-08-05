@@ -13,8 +13,37 @@
             @csrf
             @method('PATCH')
 
+            <?php if ($data->estadoProyecto !=1){
+               return view('home'); 
+            }?>
+                
+           
+
+            
               <h3><strong>Formulario para editar propuesta de proyecto</strong></h3>
+              <br>
+              <!-- nota-->
+              <div id="accordion">
+                    <div class="card">
+                      <div class="card-header indigo" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3 class="text-white">Notas para editar</h3>
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                         {{$data->comentarioProyecto}}
+                        </div>
+                      </div>
+                    </div>
+
+                    <br>
+              <!--nota-->
             <div class="md-form form-group mt-5">
+
                 <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" placeholder="Nombre del proyecto" value="{{$data->nombreProyecto}}" >
                 <label for="nombreProyecto">Nombre del proyecto</label>
             </div>

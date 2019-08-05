@@ -1,7 +1,10 @@
 @extends('welcome')
 
 @section('contenido')
+<br>
    <div class="container">
+     <h1 class="text-center">Acerca de nosotros</h1>
+     <br>
      <!-- Card deck -->
 <div class="card-deck">
 
@@ -44,7 +47,7 @@
             <h4 class="card-title text-center">Visión</h4>
             <!--Text-->
             <p class="card-text">Emprendimiento Social espera transformarse al pasar de los años en una organización de reconocimiento a nivel nacional e internacional, por proporcionar soluciones y favorecer a los emprendedores que sean implementar una idea de investigación, para potenciar la sociedad a través de una perspectiva de valores éticos, e implementar soluciones innovadoras que apoyen el desarrollo social y científico.
-                La misión y visión de Emprendimiento Social esta cimentada en principios éticos desde su inicio y tiene un sólido compromiso con la sociedad.
+                
                 </p>
           
       

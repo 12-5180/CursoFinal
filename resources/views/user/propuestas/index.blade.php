@@ -66,7 +66,9 @@
     
                               
                               @endif
-
+                              @if ($row->estadoProyecto == 3 )
+                              <a href="{{route('actualizar', $row->id)}}"><button class="btn btn-info"><i class="far fa-edit"></i>Actualizar</button></a>
+                              @endif
                           </div>
                         
                         </td>

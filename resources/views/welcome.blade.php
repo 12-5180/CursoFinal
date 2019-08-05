@@ -71,7 +71,7 @@
     <body>
        
             @include('partials.nav')
-        <br>
+        
 
 
         

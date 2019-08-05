@@ -1,9 +1,11 @@
 @extends('welcome')
 
 @section('contenido')
+<br>
     <div class="container">
         
         <h1 class="text-center">Preguntas frecuentes</h1>
+        <br>
 
         <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
@@ -32,7 +34,7 @@
               
                 </div>
                 <!-- Accordion card -->
-              
+                <br>
                 <!-- Accordion card -->
                 <div class="card">
               
@@ -58,7 +60,7 @@
               
                 </div>
                 <!-- Accordion card -->
-              
+                <br>
                 <!-- Accordion card -->
                 <div class="card">
               
@@ -86,7 +88,7 @@
               
                 </div>
                 <!-- Accordion card -->
-              
+                  <br>
                  <!-- Accordion card -->
                  <div class="card">
               
@@ -120,6 +122,81 @@
                 
                   </div>
                   <!-- Accordion card -->
+
+                  <br>
+                 <!-- Accordion card -->
+                 <div class="card">
+              
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree5">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree5"
+                        aria-expanded="false" aria-controls="collapseThree5">
+                        <h5 class="mb-0">
+                          5. ¿Realizan devoluciones a las donaciones? <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+                
+                    <!-- Card body -->
+                    <div id="collapseThree5" class="collapse" role="tabpanel" aria-labelledby="headingThree5" data-parent="#accordionEx">
+                      <div class="card-body">
+                          No, ya que las donaciones se realizan de forma anónima, es decir, no almacenamos información de los donantes
+                          
+                      </div>
+                    </div>
+                
+                  </div>
+                  <!-- Accordion card -->
+
+                  <br>
+                 <!-- Accordion card -->
+                 <div class="card">
+              
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree6">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree6"
+                        aria-expanded="false" aria-controls="collapseThree6">
+                        <h5 class="mb-0">
+                          6. ¿En que tiempo recibiré lo recaudado una vez finalizada la campaña? <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+                
+                    <!-- Card body -->
+                    <div id="collapseThree6" class="collapse" role="tabpanel" aria-labelledby="headingThree6" data-parent="#accordionEx">
+                      <div class="card-body">
+                         Dentro de 7 a 15 días laborales. En ese tiempo se realizará el deposito en la cuenta bancaria en el cual fue registrado el proyecto
+                          
+                      </div>
+                    </div>
+                
+                  </div>
+                  <!-- Accordion card -->
+
+                  <br>
+                 <!-- Accordion card -->
+                 <div class="card">
+              
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingThree7">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree7"
+                        aria-expanded="false" aria-controls="collapseThree7">
+                        <h5 class="mb-0">
+                          7. ¿Que sistemas existen para realizar las donaciones? <i class="fas fa-angle-down rotate-icon"></i>
+                        </h5>
+                      </a>
+                    </div>
+                
+                    <!-- Card body -->
+                    <div id="collapseThree7" class="collapse" role="tabpanel" aria-labelledby="headingThree7" data-parent="#accordionEx">
+                      <div class="card-body">
+                          Por el momento, solo por medio de pago eléctronico
+                          
+                      </div>
+                    </div>
+                
+                  </div>
+                  <!-- Accordion card -->
     </div></div>
-    <br>
+    
 @endsection

@@ -1,6 +1,7 @@
 @extends('welcome')
 
 @section('contenido')
+<br>
     <div class="container">
         <h1 class="text-center">Términos y condiciones</h1>
             <ol>

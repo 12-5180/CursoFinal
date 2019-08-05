@@ -26,4 +26,7 @@ class GeneralController extends Controller
     public function ayuda(){
         return view('generales.ayuda');
     }
+    public function index(){
+        return view('generales.index');
+    }
 }

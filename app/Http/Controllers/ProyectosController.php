@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Propuesta;
 use Stripe\Stripe;
 use Stripe\Customer;
 use Stripe\Charge;
+
 
 class ProyectosController extends Controller
 {
@@ -20,8 +21,14 @@ class ProyectosController extends Controller
        if($data->estadoProyecto != 3){
            return view('welcome');
        }
-       
-        return view('proyectos.show', compact('data'));
+
+       $donacion= DB::table('pagos')
+       ->where('id_proyecto', $id)
+       ->sum('donacion');
+
+       $donacion= number_format($donacion,2);
+       $actualizaciones = DB::table('actualizacions')->where('propuesta_id', '=', $data->id)->get();
+        return view('proyectos.show', compact('data','donacion','actualizaciones'));
         
     }
    

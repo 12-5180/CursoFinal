@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'GeneralController@index');
 
 Auth::routes();
 
@@ -21,7 +19,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /*Las vistas de GeneralController se encuentras todas en la carpeta "generales" */
 Route::get('nosotros', 'GeneralController@nosotros');
-Route::get('staff', 'GeneralController@staff');
+Route::get('staff', 'GeneralController@staff')->name('staff');
 Route::get('terminos-y-condiciones', 'GeneralController@terminos');
 Route::get('contacto', 'GeneralController@contacto');
 Route::get('ayuda', 'GeneralController@ayuda');
@@ -31,8 +29,18 @@ Route::get('/admin', function () {
     return view('admin.panel');
 })->middleware('auth', 'role:admin');
 
+//Crear actuzalicaciones de proyectos aprobados
+Route::get('propuestas/{id}/actualizaciones', 'ActualizacionesController@create')->middleware('auth', 'role:user')->name('actualizar');
+Route::post('actualizaciones', 'ActualizacionesController@store')->middleware('auth', 'role:user')->name('actualizarStore');
+Route::delete('actualizaciones/{id}', 'ActualizacionesController@destroy')->middleware('auth', 'role:user')->name('actualizarDestroy');
+
 //Panel para las creaciones de propuestas
 Route::resource('propuestas', 'PropuestasController')->middleware('auth', 'role:user');
+
+//Comentarios de contacto
+Route::get('contactoComentarios', 'ContactoController@index')->name('contactoComentarios')->middleware('auth', 'role:employee');
+Route::post('contactoComentario', 'ContactoController@store')->name('contactoComentariosStore');
+
 
 //Panel para las evaluaciones de propuestas
 Route::resource('validar', 'ValidarPropuestasController')->except([
@@ -70,8 +78,22 @@ Route::get('arte/{id}', 'ProyectosController@Show')->name('mostrarArte');
 //pago
 Route::post('/pago', 'StripeController@pago');
 
+//mostrar donaciones de los proyectos
+
+Route::resource('donaciones', 'DonacionesController')->only([
+    'index', 'show'
+]);
+
 //test
 Route::get('prueba', 'ProyectosController@test');
+
+Route::post('/comentarios', 'ComentariosController@store')->name('comments.store');
+
+//control
+
+Route::delete('controlComentario/{id}', 'ControlController@destroyComentario')->name('destroyComentario')->middleware('auth', 'role:employee');
+Route::delete('controlActualizacion/{id}', 'ControlController@destroyActualizacion')->name('destroyActualizacion')->middleware('auth', 'role:employee');
+
 
 /*
 

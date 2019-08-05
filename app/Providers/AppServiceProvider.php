@@ -31,5 +31,7 @@ class AppServiceProvider extends ServiceProvider
             'create' => 'crear',
             'edit' => 'editar',
         ]);
+
+       
     }
 }

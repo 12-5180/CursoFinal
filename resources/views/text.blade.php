@@ -1,38 +1,24 @@
-<form action="/pago" method="post" id="prueba">
-  @csrf
-
-  <input type="hidden" name="stripeToken" id="stripeToken">
-  <input type="hidden" name="stripeEmail" id="stripeEmail">
-
-  <input type="number" name="cantidad" id="cantidad" min="100" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   
+</head>
+<body>
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d42dae2003c1b0012ebc883&product=custom-share-buttons"></script>
 
+    <?php 
+     if(Auth::check() && Auth::user()->hasRole('employee')){
+        echo"si";
+     }else{
+       echo"no";
+     }
+    
+    ?>
 
-  <button type="submit" id="button">Donar</button>
-
-</form>
-
-<script src="https://checkout.stripe.com/checkout.js"></script>
-                                
-<script>
-    let stripe=StripeCheckout.configure({
-      key: "pk_test_OXnssx7caXBuF2SFGxFKfN7l00R830dRRo",
-      image: '{{asset('images/logo.png')}}',
-      locale:"auto",
-      token: function(token){
-        document.querySelector('#stripeEmail').value=token.email;
-        document.querySelector('#stripeToken').value=token.id;
-        document.querySelector('#prueba').submit();
-      }
-    });
-
-    document.querySelector('#button').addEventListener('click',function(e){
-      stripe.open({
-        name:'Emprendimiento Social',
-        description:'Donación a proyecto',
-        zipCode: false,
-        amount: document.querySelector('#cantidad').value
-      });
-      e.preventDefault();
-    });
-</script>
+</div>
+</body>
+</html>

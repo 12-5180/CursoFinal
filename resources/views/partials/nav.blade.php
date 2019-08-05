@@ -6,26 +6,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="{{route('educación')}}">Educación </a>
+            <li class="nav-item {{ (request()->is('educación') || request()->is('educación/*'))  ? 'active' : '' }}">
+              <a class="nav-link" href="{{route('educación')}}"><i class="fas fa-book text-white"></i>Educación </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/medioAmbiente">Medio Ambiente</a>
+            <li class="nav-item {{ (request()->is('medioAmbiente') || request()->is('medioAmbiente/*'))  ? 'active' : '' }}">
+              <a class="nav-link " href="/medioAmbiente"><i class="fas fa-tree text-white"></i>Medio Ambiente</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/salud">Salud</a>
+            <li class="nav-item {{ (request()->is('salud') || request()->is('salud/*'))  ? 'active' : '' }}">
+              <a class="nav-link " href="/salud"><i class="fas fa-prescription-bottle-alt text-white"></i>Salud</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/comunitario">Comunitario</a>
+            <li class="nav-item {{ (request()->is('comunitario') || request()->is('comunitario/*'))  ? 'active' : '' }}">
+                <a class="nav-link" href="/comunitario"><i class="far fa-handshake text-white"></i>Comunitario</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/innovación">Innovación</a>
+            <li class="nav-item {{ (request()->is('innovación') || request()->is('innovación/*'))  ? 'active' : '' }}">
+                <a class="nav-link" href="/innovación"><i class="fas fa-flask text-white"></i>Innovación</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/divulgación">Divulgación</a>
+            <li class="nav-item {{ (request()->is('divulgación') || request()->is('divulgación/*'))  ? 'active' : '' }}">
+                <a class="nav-link " href="/divulgación"><i class="fas fa-microphone-alt text-white"></i>Divulgación</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="arte">Arte</a>
+            <li class="nav-item {{ (request()->is('arte') || request()->is('arte/*'))  ? 'active' : '' }}">
+                <a class="nav-link" href="arte"><i class="fas fa-image text-white"></i>Arte</a>
             </li>
             
           </ul>
@@ -34,7 +34,7 @@
                 @if (Route::has('login'))
                 <li class="nav-item">
                     @auth
-                    <a class="nav-link text-white" href="{{ url('/home') }}">Home</a>
+                    <a class="nav-link text-white" href="{{ url('/home') }}">Panel de usuario</a>
                 </li>
                 @else
                 <li class="nav-item">

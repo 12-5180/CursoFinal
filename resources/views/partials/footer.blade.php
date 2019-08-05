@@ -19,7 +19,7 @@
       
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
-              <h6 class="text-uppercase font-weight-bold">
+              <h6 class="text-uppercase font-weight-bold ">
                 <a href="/terminos-y-condiciones">Términos y condiciones</a>
               </h6>
             </div>
@@ -28,7 +28,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="/staff">Staff</a>
+                <a href="/staff" class="active"   >Staff</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -79,11 +79,11 @@
               <div class="mb-5 flex-center">
       
                 <!-- Facebook -->
-                <a class="fb-ic">
+                <a class="fb-ic" href="https://www.facebook.com/pg/Empredimiento-Social-103195621026771/about/?ref=page_internal ">
                   <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
                 </a>
                 <!-- Twitter -->
-                <a class="tw-ic">
+                <a class="tw-ic" href="https://twitter.com/Emprend68051828 ">
                   <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
                 </a>
                 <!-- Google +-->
@@ -91,15 +91,15 @@
                   <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
                 </a>
                 <!--Linkedin -->
-                <a class="li-ic">
+                <a class="li-ic" href="https://www.linkedin.com/in/emprendimiento-social-168046190">
                   <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
                 </a>
                 <!--Instagram-->
-                <a class="ins-ic">
+                <a class="ins-ic" href="https://www.instagram.com/empsocial">
                   <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
                 </a>
                 <!--Pinterest-->
-                <a class="pin-ic">
+                <a class="pin-ic" href="https://www.pinterest.com/emprendimientosocialrd/">
                   <i class="fab fa-pinterest fa-lg white-text"> </i>
                 </a>
       

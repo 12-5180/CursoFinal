@@ -191,7 +191,8 @@ class PropuestasController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
+    {   
+        dd($id);
         $data = Propuesta::findOrFail($id);
         
         $data->delete();

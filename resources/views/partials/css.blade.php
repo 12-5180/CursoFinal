@@ -16,6 +16,7 @@
 <style>
 
 
+
 html {
   position: relative;
   min-height: 100%;
@@ -31,28 +32,12 @@ body {
   line-height: 60px; /* Vertically center the text there */
  
 }
-
-    /*
-    html,body{
-        font-family: 'Roboto', sans-serif;
-
-       
-        
-    
-    }*/
-    
-    /*
-    footer{
-        
-        
-        position: relative;
-        bottom: 0;
-        left: 0;
-        margin-top: auto;
-        width: 100%;
-
-        
-    }*/
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
 
 
     .nosotros{

@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('contenido')
-
+<br>
 <div class="container">
     <section class="team-section text-center my-5">
 
@@ -26,8 +26,7 @@
           </div>
           <h5 class="font-weight-bold mt-4 mb-3">Raymundo Vásquez                               </h5>
           <p class="text-uppercase blue-text"><strong>Software Security Developer</strong></p>
-          <p class="grey-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci sed quia non numquam modi tempora eius.</p>
+          <p class="grey-text">Vigila que tanto la seguridad de las transacciones como la privacidad de nuestros usuarios esten protegidos</p>
           <ul class="list-unstyled mb-0">
             <!-- Facebook -->
             <a class="p-2 fa-lg fb-ic">
@@ -53,8 +52,7 @@
           </div>
           <h5 class="font-weight-bold mt-4 mb-3">Jayson Santana</h5>
           <p class="text-uppercase blue-text"><strong>Web developer</strong></p>
-          <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
-            doloremque rem laudantium totam aperiam.</p>
+          <p class="grey-text">Diseña y construye la aplicacón web <br><br><br></p>
           <ul class="list-unstyled mb-0">
             <!-- Facebook -->
             <a class="p-2 fa-lg fb-ic">
@@ -76,8 +74,7 @@
           </div>
           <h5 class="font-weight-bold mt-4 mb-3">Julio De La Cruz        </h5>
           <p class="text-uppercase blue-text"><strong>DBA</strong></p>
-          <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim est fugiat nulla id eu laborum.</p>
+          <p class="grey-text">Procura que la persistencia e integridad de la los datos esten correctos y en funcionamiento <br><br></p>
           <ul class="list-unstyled mb-0">
             <!-- Facebook -->
             <a class="p-2 fa-lg fb-ic">

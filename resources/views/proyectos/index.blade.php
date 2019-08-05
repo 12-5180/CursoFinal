@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('contenido')
-
+    <br>
 
     <div class="container">
         
@@ -21,7 +21,7 @@
                     <div class="row">
     
                         <div class="col-3 ">
-                              <img src="{{ URL::to('/') }}/imagenes/{{ $row->portadaProyecto }}" class="img-thumbnail" width="250px" />
+                              <img src="{{ URL::to('/') }}/imagenes/{{ $row->portadaProyecto }}" class="img-thumbnail" width="80%" height="270px"/>
                         </div>
                         <div class="col-9 ">
                                 <p class="card-text text-black">
