@@ -31,7 +31,7 @@
             description:'Donación a proyecto',
             zipCode: false,
             currency: 'DOP',
-            amount: document.querySelector('#cantidad').value ,
+            amount: document.querySelector('#cantidad').value *100,
             
           });
           e.preventDefault();
