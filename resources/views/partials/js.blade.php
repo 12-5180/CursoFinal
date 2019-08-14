@@ -56,3 +56,19 @@
           alert(msg);
         }
 </script>
+
+
+<script type="text/javascript">
+    function activar () {
+      var campo = $('#cantidad').val();
+      
+      if((campo!=null) && (campo>99)){
+        $('#button').attr('disabled',false);
+        
+      }else{
+        $('#button').attr('disabled',true);
+      }
+
+    }
+
+</script>

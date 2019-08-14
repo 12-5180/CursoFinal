@@ -21,7 +21,7 @@ class Propuesta extends Model
 
     public function comentarios()
     {
-        return $this->hasMany(Comentario::class)->whereNull('parent_id');
+        return $this->hasMany(Comentario::class);
     }
 
    public function donacion($id){

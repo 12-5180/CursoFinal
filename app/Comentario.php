@@ -17,7 +17,7 @@ class Comentario extends Model
      *
      * @var array
      */
-    protected $fillable = ['user_id', 'propuesta_id', 'parent_id', 'body'];
+    protected $fillable = ['user_id', 'propuesta_id', 'body'];
    
     /**
      * The belongs to Relationship
@@ -34,8 +34,5 @@ class Comentario extends Model
      *
      * @var array
      */
-    public function replies()
-    {
-        return $this->hasMany(Comentario::class, 'parent_id');
-    }
+   
 }

@@ -95,6 +95,7 @@ Route::delete('controlComentario/{id}', 'ControlController@destroyComentario')->
 Route::delete('controlActualizacion/{id}', 'ControlController@destroyActualizacion')->name('destroyActualizacion')->middleware('auth', 'role:employee');
 
 
+
 /*
 
 php artisan config:clear

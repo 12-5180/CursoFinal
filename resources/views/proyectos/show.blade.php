@@ -93,24 +93,11 @@
                               
                                 <input type="hidden" name="idProyecto" id="idProyecto" value="{{$data->id}}">
                                 
-                                <label for="cantidad"></label>
-                                
-                                    
-                                        <label for="cantidad"><strong>Seleccione la cantidad que desea donar:</strong></label>
-                                        <select class="custom-select custom-select-sm " name="cantidad" id="cantidad" style="width:30%">
-                                                
-                                                <option value=10000>$100.00</option>
-                                                <option value=25000>$250.00</option>
-                                                <option value=50000>$500.00</option>
-                                                <option value=100000>$1,000.00</option>
-                                                <option value=200000>$2,000.00</option>
-                                                
-                                              </select>
-                                    
+                                <label for="campo">Digite la cantidad que desea donar:</label>
                                   
-                                    
+                                <input onkeyup="activar ()" type="number" name="cantidad" id="cantidad" min="100" placeholder="Mínimo DOP $100.00">
                         
-                                        <button type="submit" id="button" class="btn btn-primary text-white"><i class="fas fa-dollar-sign"></i>Donar</button>
+                                <button  disabled type="submit" id="button" class="btn btn-primary text-white"><i class="fas fa-dollar-sign"></i>Donar</button>
                                     
                                 </form>
                     </div>

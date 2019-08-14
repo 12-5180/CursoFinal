@@ -15,11 +15,14 @@ class StripeController extends Controller
     //
     public function pago(Request $request)
     {
+        if($request->cantidad  <100){
+            return back();
+        }
         $data = Propuesta::findOrFail($request->idProyecto);
         
-        Stripe::setApiKey(env('STRIPE_SECRET'));
+        Stripe::setApiKey("sk_test_pdsoztaMKHOiQQMxnnOmhusb00pehsJzJP");
         
-
+        //Stripe::setApiKey(env('STRIPE_SECRET'));
         
        
         Charge::create ([
