@@ -24,9 +24,10 @@ class StripeController extends Controller
         
         //Stripe::setApiKey(env('STRIPE_SECRET'));
         
-       
+        
+        $cantidad=$request->cantidad*=100;
         Charge::create ([
-                "amount" => $request->cantidad,
+                "amount" => $cantidad,
                 "currency" => "DOP",
                 "source" => $request->stripeToken,
                 "description" => "Donación para el proyecto: ". $data->nombreProyecto 
